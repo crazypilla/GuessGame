@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/border"
+tools:context=".MainActivity">
+
+
+
+<TextView
+    android:id="@+id/appText"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+
+    android:text="I am thinking of a number between 1 to 20."
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="parent" />
+
+
+<EditText
+    android:id="@+id/number"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:hint="Enter number [1-20]"
+    android:inputType="number"
+
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/appText" />
+
+<Button
+    android:id="@+id/guess_Button"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@color/colorAccent"
+    android:text="GUESS"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/number" />
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guess_Button" />
+
+
+</android.support.constraint.ConstraintLayout>
